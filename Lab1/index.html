@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="pl-pl">
+    <title>Mój Biblioteczny Program</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Moja Biblioteka</h1>
+
+<h2>Dodaj nową książkę</h2>
+<form>
+    <label for="title">Tytuł:</label>
+    <input type="text" id="title" required>
+
+    <label for="author">Autor:</label>
+    <input type="text" id="author" required>
+
+    <label for="numberOfPages">Liczba stron:</label>
+    <input type="number" id="numberOfPages" required>
+
+    <button type="button" onclick="handleAddBook()">Dodaj książkę</button>
+</form>
+
+<h2>Usuń pierwszą i ostatnią książkę</h2>
+
+<button type="button" id="deleteFirstBookButton" onclick="handleRemoveFirstBook()">Usuń pierwszą książkę</button>
+<button type="button" id="deleteLastBookButton" onclick="handleRemoveLastBook()">Usuń ostatnią książkę</button>
+
+
+<h2>Aktualne książki:</h2>
+<table id="booksTable">
+    <thead>
+    <tr>
+        <th>Tytuł</th>
+        <th>Autor</th>
+        <th>Ilość stron</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- tutaj zostaną dodane wiersze z książkami -->
+    </tbody>
+</table>
+
+
+
+<script src="scripts.js"></script>
+</body>
+</html>
